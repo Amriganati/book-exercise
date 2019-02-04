@@ -21,13 +21,13 @@ class Book
      * is constructed. as well as instanciate a 0 value for refNumber. 
      */
     public Book(String bookAuthor, String bookTitle, int bookPages, 
-     String refNumber, boolean isCourseText)
+     boolean bookCourseText)
     {
         author = bookAuthor;
         title = bookTitle;
         pages = bookPages;
         refNumber = "";
-        courseText = isCourseText;
+        courseText = bookCourseText;
        
     }
 
@@ -38,6 +38,7 @@ class Book
     { 
         return author;
     }
+    
     /**
      * Gets the title of the book.
      */
@@ -72,7 +73,7 @@ class Book
     }
     
     public boolean isCourseText(){
-     return courseText;
+        return courseText;
     }
     
     /** 
@@ -117,6 +118,7 @@ class Book
             System.out.println("Reference Number: N/A");
         }
     }
+    
     /**
      * Checks to see if the reference number for book is valid format.
      * If not it yells at you.
