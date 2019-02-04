@@ -20,7 +20,7 @@ class Book
      * is constructed.
      */
     public Book(String bookAuthor, String bookTitle, int bookPages, 
-   String refNumber)
+     String refNumber)
     {
         author = bookAuthor;
         title = bookTitle;
@@ -44,6 +44,7 @@ class Book
     {
         return pages;
     }
+    
     /** 
      * print the author
      */
@@ -80,7 +81,14 @@ class Book
     }
     public void setRefNumber(String ref)
     {
+        if(ref.length() >= 3){
          refNumber = ref;
+        }
+        else{
+        System.out.println("Not a valid reference number!");
+        System.out.println("Valid reference numbers must be");
+        System.out.println("at least three characters long");
+        }
     }
     
     /**
