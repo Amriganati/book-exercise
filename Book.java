@@ -42,7 +42,7 @@ class Book
     /** 
      * print the author
      */
-    public String printAuthor()
+    public void printAuthor(String author)
     {
         System.out.println("author: " + author);
     }
@@ -50,7 +50,7 @@ class Book
     /**
      * print the title
      */
-    public String printTitle()
+    public void printTitle(String author)
     {
         System.out.println("title: " + title);
     }
