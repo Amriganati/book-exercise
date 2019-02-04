@@ -15,6 +15,7 @@ class Book
     private String refNumber;
     private int borrowed;
     private Boolean courseText;
+    
     /**
      * Set the author and title fields when this object
      * is constructed.
@@ -26,6 +27,7 @@ class Book
         title = bookTitle;
         pages = bookPages;
         refNumber = "";
+       
     }
 
     // Add the methods here ...
@@ -40,9 +42,19 @@ class Book
 
     }
     
-    public Integer getPages()
+    public int getPages()
     {
         return pages;
+    }
+    
+    public int getBorrowed()
+    {
+        return borrowed;
+    }
+    
+    public void borrow()
+    {
+        borrowed += 1;
     }
     
     /** 
@@ -70,7 +82,15 @@ class Book
         System.out.println("Title: " + title);
         System.out.println("Author: " + author);
         System.out.println("Pages: " + pages);
-        
+        System.out.println("Checked out?: " + borrowed);
+        /**
+         * would only work if a function to record books being checked out
+         * was programmed.
+        *if(borrowed() > 0)
+        *{
+        *    System.out.println("This book is currently checked out!")
+        *}
+        */
         if(refNumber.length() > 0)
         {
             System.out.println("Reference Number: " + refNumber);
