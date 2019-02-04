@@ -11,17 +11,21 @@ class Book
      // The fields.
     private String author;
     private String title;
-    private Integer pages;
+    private int pages;
     private String refNumber;
+    private int borrowed;
+    private Boolean courseText;
     /**
      * Set the author and title fields when this object
      * is constructed.
      */
-    public Book(String bookAuthor, String bookTitle, Integer bookPages)
+    public Book(String bookAuthor, String bookTitle, int bookPages, 
+   String refNumber)
     {
         author = bookAuthor;
         title = bookTitle;
         pages = bookPages;
+        refNumber = "";
     }
 
     // Add the methods here ...
@@ -55,14 +59,21 @@ class Book
     {
         System.out.println("title: " + title);
     }
+    
     /**
      * Print a detailed description of the book, including title, author, 
      * and page count.
      */
     public void printDetails()
     {
-        System.out.println("Title: " + title + ", Author: " + author + 
-        ", Pages: " + pages);
+        System.out.println("Title: " + title);
+        System.out.println("Author: " + author);
+        System.out.println("Pages: " + pages);
+    }
+    
+    public void setRefNumber(String ref)
+    {
+        ReferenceNumber = refNumber;
     }
 }
 
