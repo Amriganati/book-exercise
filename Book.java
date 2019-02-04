@@ -24,9 +24,11 @@ class Book
 
     // Add the methods here ...
     public String getauthor()   
-    {
-            return author
-    
+    { 
+        return author;
     }
     
+    public String getauthor()
+    {
+        return title;
 }
