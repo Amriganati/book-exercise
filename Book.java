@@ -12,6 +12,7 @@ class Book
     private String author;
     private String title;
     private Integer pages;
+    private String refNumber;
     /**
      * Set the author and title fields when this object
      * is constructed.
@@ -54,5 +55,15 @@ class Book
     {
         System.out.println("title: " + title);
     }
+    /**
+     * Print a detailed description of the book, including title, author, 
+     * and page count.
+     */
+    public void printDetails()
+    {
+        System.out.println("Title: " + title + ", Author: " + author + 
+        ", Pages: " + pages);
+    }
 }
+
  
