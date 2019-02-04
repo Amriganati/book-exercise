@@ -73,8 +73,18 @@ class Book
     
     public void setRefNumber(String ref)
     {
-        ReferenceNumber = refNumber;
+         refNumber = ref;
     }
+    
+    /**
+     * Returns reference number as refNumber.
+     */
+    public String getRefNumber()
+    {
+        return refNumber;
+    }
+    
 }
+
 
  
